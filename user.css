@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 8px;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: none;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+  }
+  .header {
+    z-index: 10000;
+    padding: 0.002em 20%;
+    position: fixed;
+    top: -1em;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    margin-left: -6em;
+    margin-right: -22em;
+  }
+  
+  .header .logo {
+    margin-left: -12em;
+    font-size: 2.5rem;
+    color: var(--black);
+  }
+  
+  .header img {
+    scale: 2.2;
+    position: relative;
+    width: 10%;
+    height: auto;
+    margin-top: 1em;
+    margin-right: 70em;
+    margin-left: -15em;
+    color: white;
+  }
+  
+  .header.navbar {
+    margin-right: 3em;
+    position: relative;
+  }
+  
+  .header .navbar a {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+  }
+  
+  .header .navbar a:hover {
+    color: rgb(32, 114, 26);
+  }
+  
+  .header .search-container {
+    background: rgb(185, 185, 185);
+    color: #777;
+    height: 3.7em;
+    scale: 1.2;
+    padding: 0.8em;
+    border-radius: 0.4em;
+    margin-left: -12em;
+    margin-right: 14em;
+  }
+
+  .header .search-container input{
+    margin-top: -10px;
+    margin-bottom: 5em;
+    top: -5em;
+  }
+  
+  .header .search-container .search {
+    margin-top: -0.97em;
+    margin-right: 0.2em;
+    margin-left: 0em;
+  }
+  
+
+
+:root {
+  --green:#1c6117;
+  --black:#444;
+  --light-color:#777;
+  --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+  --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+  --border:.2rem solid var(--green);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+  background: none;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 65px;
+
+
+  
+} 
+.header .search-container from{
+  border: none;
+  margin-right: 8em;
+}
+
+
+
+
+ input[type=date], input[type=Birthday] {
+  width: 100%;
+  padding: 1332px 15px;
+  margin: 8px 0;
+
+  display: inline-block;
+  border: 2px solid rgb(13, 9, 9);
+  box-sizing: border-box;
+
+}
+
+
+
+
+.formm{
+  border: 2px solid #1c6117;
+  background-color: #ffffff;
+  border-radius: 1.5em;
+}
+.container input{
+  width: 100%;
+  z-index: 500;
+  border-radius: 0.85em;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  padding: 1.2rem;
+  margin-bottom: 1em;
+  size: right -1em;
+  height: 3.4em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, auto));
+  gap: 2rem;
+   
+
+}
+
+h2{
+  text-align: center;
+  color: rgba(248, 245, 245, 0.989);
+}
+button {
+
+  width: 100%;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border: var(--border);
+  border-radius: 1.5em;
+  box-shadow: var(--box-shadow);
+  color: var(--green);
+  cursor: pointer;
+  font-size: 1.7rem;
+  background: #fff;
+  
+}
+h1{
+  margin-top: 50px;
+}
+
+.login_btn {
+  align-items: center;
+  margin-left: 48em;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ffffff;
+
+}
+.login_btn:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+.login_btn:hover span {
+  color: var(--green);
+  background: #fff;
+  margin-left: 1rem;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ffffff;
+
+}
+.cancelbtn:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+.cancelbtn:hover span {
+  color: var(--green);
+  background: #fff;
+  margin-left: 1rem;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.search-container .search input{
+  margin-top: 0.1em;
+}
+.container {
+  padding: 60px;
+}
+
+.container .chkbox{
+  scale:0.4;
+  margin-left: -33em;
+  margin-top: 1em;
+  padding: 2em;
+  box-shadow: none;
+}
+.container .psw{
+  margin-left: 0em;
+}
+.container .dat{
+  margin-left: 0.5em;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}

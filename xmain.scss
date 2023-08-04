@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+    --green: #1c6117;
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: .5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: .2rem solid #1c6117;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: none;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+.submt {
+    margin-left: 1.5em;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 0.1rem;
+    border: var(--border);
+    border-radius: 1.5em;
+    box-shadow: var(--box-shadow);
+    color: var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: #fff;
+}
+
+.btn span {
+    padding: .7rem 1rem;
+    border-radius: 1.5em;
+    background: var(--green);
+    color: #fff;
+    margin-left: .5rem;
+}
+
+.btn:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.btn:hover span {
+    color: var(--green);
+    background: #fff;
+    margin-left: 1rem;
+}
+
+.header {
+    z-index: 10000;
+    padding: 0.002em 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    margin-left: -6em;
+    margin-right: -22em;
+}
+
+.header .logo {
+    margin-left: -12em;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header img {
+    scale: 2.2;
+    position: relative;
+    width: 10%;
+    height: auto;
+    margin-top: 1em;
+    margin-right: 70em;
+    margin-left: -15em;
+    color: white;
+}
+
+.header.navbar {
+    margin-right: 3em;
+    position: relative;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: rgb(35, 97, 22);
+}
+
+.header .search-container {
+    background: rgb(185, 185, 185);
+    color: #777;
+    height: 3.7em;
+    scale: 1.2;
+    padding: 0.8em;
+    border-radius: 0.4em;
+    margin-left: -12em;
+    margin-right: 14em;
+}
+
+.header .search-container .search {
+    width: auto;
+    margin-right: 0.2em;
+    margin-left: 0em;
+}
+
+
+/*# sourceMappingURL=xmain.css.map */
+
+
+/*# sourceMappingURL=xmain.css.map */
+
+.div_bg .reg_info h1 {
+    margin-top: 2em;
+}
+
+.div_bg .reg_info .box {
+    background: #fff;
+    border-radius: 1.5em;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 3rem;
+    height: auto;
+    scale: 0.89;
+}
+
+.div_bg .reg_info .box .location {
+    border-radius: 0.85em;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 1.2rem;
+    margin-right: 60em;
+    margin-top: -2.4em;
+    margin-left: -.5em;
+    size: right -1em;
+    height: 3em;
+}
+
+.div_bg .reg_info .box .location .btn text {
+    scale: 1.2em;
+}
+
+.div_bg .reg_info .box .location .btn {
+    margin-top: 1.5em;
+    margin-left: -0.8em;
+}
+
+.div_bg .reg_info .box .input {
+    z-index: 500;
+    border-radius: 0.85em;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 1.2rem;
+    size: right -1em;
+    height: 3.4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, auto));
+    gap: 2rem;
+}
+
+.div_bg .reg_info .box i {
+    color: var(--green);
+    font-size: 5rem;
+}
+
+.div_bg .reg_info .box .input .option text {
+    font-size: 1.2em;
+    z-index: 700;
+}
+
+h3 {
+    color: black;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    margin-left: 3em;
+}
+
+h1 {
+    color: black;
+    font-size: 2rem;
+}
+
+.div_bg .reg_info .box p {
+    color: rgb(27, 40, 27);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/*# sourceMappingURL=main_2.css.map */

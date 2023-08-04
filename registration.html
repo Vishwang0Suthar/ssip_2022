@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web portal for farmer id</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="xmain.css">
+
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header class="header">
+        <img src="logo.png" href="index.html">
+        <a href="#" class="logo"></a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <div id="search" class="search">
+                    <input type="text" placeholder=" &nbsp;Search..." name="search" style="font-style:italic">
+
+                    <a onclick="window.location.reload();">
+                        &nbsp;
+                        <div type="submit" id="menu-btn" class="fas fa-search" style="scale:1.2"></div>
+
+                    </a>
+                </div>
+
+            </form>
+        </div>
+        <nav class="navbar" id="home">
+            <a href="index.html">Home</a>
+            <a href="#footer">Schemes</a>
+
+
+            <a href="#user_login">User_login</a>
+
+            <a href="#footer">About</a>
+        </nav>
+    </header>
+
+    <form action="submitx.php" method="post" name="for">
+        <div class="div_bg" name="divbg">
+            <div class="reg_info" id="reg_info" name="reginfo">
+                <center>
+                    <h1 style="font-size: 35px;" id="govt_schemes"><br><br>FARMERS REGISTRATION INFO</h1>
+                </center>
+                <div class="box" name="bax">
+                    <i class="fa-solid fa-wheat-alt"></i>
+                    <center>
+                        <h1>Enter farmers personal info here</h1>
+                    </center>
+                    <br><br>
+
+                    <input class="input" name="farmer_id" id="aidi" type="text" contenteditable="false" style="display:none;">
+                    <p>Enter your name:</p>
+                    <input class="input" name="farmer_name" type="text">
+                    <p>Enter date of birth:</p>
+                    <input class="input" name="date_of_birth" type="date">
+
+                    <p>Enter E-mail address :</p>
+                    <input class="input" name="farmer_email" type="text" size="20">
+                    <p>Enter mobile number:</p>
+                    <input class="input" type="number" name="mobile_no" size="11">
+
+                    <p>Enter a registered adhaar card number:</p>
+                    <input class="input" type="number" name="aadhar_no" size="12">
+
+                    <p>Enter your bank account number:</p>
+                    <input class="input" type="number" name="account_no" size="12">
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-tractor"></i>
+                    <center>
+                        <h1>Enter farmers farm info here</h1>
+                    </center>
+                    <br><br>
+                    <p>Enter your Survey no:</p>
+                    <input class="input" type="number" name="survey_no">
+
+                    <p>Enter State:</p>
+                    <input class="input" type="text" name="state">
+
+                    <p>Enter District:</p>
+                    <input class="input" type="text" name="district">
+
+                    <p>Enter Taluka:</p>
+                    <input class="input" type="text" name="taluka">
+
+                    <p>Enter Village:</p>
+                    <input class="input" type="text" name="village">
+
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-money-bill-1-wave"></i>
+                    <center>
+                        <h1>Enter farmers field info here</h1>
+                    </center>
+                    <br><br>
+
+
+                    <p>Enter Soil Report:</p>
+                    <input class="input" type="file" name="soil_report" class="form-control" accept=".pdf" required/>
+                    <p>Enter the Irrigation techiques used:</p>
+                    <input class="input" type="text" name="irrigation">
+                    <p>Enter Land Title:</p>
+                    <input class="input" type="text" name="land_title">
+                    <p>Upload 7/12 document:</p>
+                    <input class="input" type="file" name="doc_712" class="form-control" accept=".pdf" required/>
+                    <p>Enter Crop History:</p>
+                    <input class="input" type="text" name="crop_history">
+
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-wheat-alt"></i>
+
+                    <center>
+                        <h1>Enter farmers yield info here</h1>
+                    </center>
+                    <br><br>
+
+
+                    <p>Enter Acres Harvested:</p>
+                    <input class="input" type="text" name="acres_harvested">
+
+                    <p>Enter Harvesting Technique:</p>
+                    <input class="input" type="text" name="harvesting_technique">
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-wheat-alt"></i>
+                    <center>
+                        <h1>Enter farmers financial info here</h1>
+                    </center>
+                    <br><br>
+
+                    <p>Enter Account Ownership Info:</p>
+                    <input class="input" type="text" name="account_ownership">
+                    <p>Enter Loan Amount:</p>
+                    <input class="input" type="number" name="loan_amount">
+                    <p>Enter Use of loan:</p>
+                    <input class="input" type="text" name="use_of_loan">
+
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-wheat-alt"></i>
+                    <center>
+                        <h1>Enter farmers insurance info here</h1>
+                    </center>
+                    <br><br>
+
+                    <p>Enter Insurance Amount:</p>
+                    <input class="input" type="number" name="insurance_amount">
+                    <p>Enter Company Name:</p>
+                    <input class="input" type="text" name="cmp_details">
+                    <p>Enter Insurance Period:</p>
+                    <input class="input" type="text" name="ins_period">
+
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-wheat-alt"></i>
+                    <center>
+                        <h1>Enter farmers business info here</h1>
+                    </center>
+                    <br><br>
+
+                    <p>Enter Sales price of crops Sold:</p>
+                    <input class="input" type="number" name="sales_price">
+                    <p>Enter Co-operative membership:</p>
+                    <input class="input" type="text" name="co_operative_membership">
+
+                </div>
+
+                <center>
+                    <button class="btn" type="submit" onclick="alert(well + val)" action="submitx.php" method="post">Submit<span class="fas fa-chevron-right"></span> </buttin>
+                </center>
+
+            </div>
+        </div>
+    </form>
+    <script>
+        var seq = (Math.floor(Math.random() * 10000) + 10000).toString().substring(1);
+        var seq2 = (Math.floor(Math.random() * 10000) + 10000).toString().substring(1);
+        var seq3 = (Math.floor(Math.random() * 10000) + 10000).toString().substring(1);
+        var seq4 = (Math.floor(Math.random() * 10000) + 10000).toString().substring(1);
+        var val = seq.toString() + " " + seq2.toString() + " " + seq3.toString() + " " + seq4.toString();
+        console.log(val);
+        document.getElementById("aidi").value = val;
+        var well = "Your farmer id is: \n"
+            //document.for.divbg.reginfo.bax.farmer_id.value = val;
+    </script>
+
+
+
+</body>
+
+</html>

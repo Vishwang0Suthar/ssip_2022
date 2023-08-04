@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+--green:#1c6117;
+--black:#444;
+--light-color:#777;
+--box-shadow:.5rem .5rem 0 rgb(26, 110, 33);
+--text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+--border:.2rem solid var(--green);
+}
+
+* {
+font-family: "Poppins", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+border: none;
+text-transform: none;
+transition: all 0.2s ease-out;
+text-decoration: none;
+}
+
+html {
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-padding-top: 7rem;
+scroll-behavior: smooth;
+}
+
+
+.header {
+    
+    z-index: 10000;
+    padding: 0.002em 20%;
+    position: relative;
+    top: -2;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-radius: 2em;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    margin-left: -6em;
+    margin-right: -22em;
+    margin-bottom: -2em;
+}
+
+.header .logo {
+    margin-left: -12em;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header img {
+    scale: 2.2;
+    position: relative;
+    width: 10%;
+    height: auto;
+    margin-top: 1em;
+    margin-right: 60em;
+    margin-left: -5em;
+    color: white;
+}
+
+.header.navbar {
+    margin-right: 3em;
+    position: relative;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: green;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color: rgb(37, 170, 25);
+}
+
+
+
+.header .search-container {
+    background: rgb(185, 185, 185);
+    color: #777;
+    height: 3.7em;
+    scale: 1.2;
+    padding: 0.8em;
+    border-radius: 0.4em;
+    margin-left: -12em;
+    margin-right: 14em;
+}
+
+.header .search-container .search {
+    width: auto;
+    margin-right: 0.2em;
+    margin-left: 0em;
+}
+
+.container{
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    /*background-size: cover;
+    background-position: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'verdana', sans-serif;
+    font-size: medium;
+}
+
+.profile-box{
+    background-color: #1c6117;
+    text-align: center;
+    padding: 40px 90px;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+}
+
+.home-icon{
+    width: 10px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+.setting-icon{
+    width: 25px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.profile-pic{
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 6px;
+    margin-top: 40px;
+}
+
+
+.profile-bottom{
+    background: #fff;
+    color: #1c6117;
+    padding: 60px 0;
+    margin-right: -90px;
+    margin-left: -90px;
+    margin-bottom: -40px;
+    border-radius: 20px;
+    margin-top: -10px;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 400;
+}
+
+.profile-bottom img{
+    width: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.profile-box button{
+    background: #fff;
+    color: #1c6117;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 10px; 
+    padding: 15px 60px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: -50px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.profile-box h3{
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.social-media img{
+    width: 20px;
+    margin: 30px 5px;
+    cursor: pointer;
+}
+.khokhu{
+    margin-top: 2em;
+}

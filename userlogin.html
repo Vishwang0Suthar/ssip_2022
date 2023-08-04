@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="user.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png"> 
+    <a href="#" class="logo"></a>
+    <div class="search-container">
+        <form action="/action_page.php">
+           <div id="search" class="search">
+          <input type="text" placeholder=" &nbsp;Search..." name="search" style="font-style:italic" >
+        
+          <a onclick="window.location.reload();">
+            &nbsp;
+          <div type="submit" id="menu-btn" class="fas fa-search" style="scale:1.2"></div>
+          
+        </a>
+          </div>
+          
+        </form>
+      </div>
+    <nav class="navbar" id="home">
+        <a href="#slide">Home</a>
+        <a href="#govt_schemes">Schemes</a>
+        
+        
+        <a href="#user_login">User_login</a>
+        
+        <a href="#footer">About</a>
+    </nav>
+</header>
+
+
+
+    <h1><b><center><font size="30">USER LOGIN</font></center></b></h1>
+
+
+
+    <form action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b><font size="5" class="uname">FARMER'S ID</font></b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw" style="margin-top: 2em;"><b><font size="5" class="psw">PASSWORD</font></b></label>
+          <input type="date" placeholder="Birthday" class="dat" name="Bdy" required style="height: 60px; margin-top: 2px;">
+              
+          <button type="submit" class="login_btn"><font size="5">Login</font></button><br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" class="chkbox"><font size="3"> Remember me</font>
+          </label>
+        </div>
+        <button type="button" class="cancelbtn">Cancel</button>
+        <font size="3"><span class="psw">Forgot<a href="#">password ?</a></span></font>
+        </div>
+      </form>
+    
+</body>   
+</html>

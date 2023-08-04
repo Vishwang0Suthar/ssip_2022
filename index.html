@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web portal for farmer id</title>
+
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href=#footer>upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- header section starts  -->
+
+
+    <header class="header">
+        <img src="logo.png" onClick="window.location.reload(); " href="index.html">
+        <a href="#" class="logo"></a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <div id="search" class="search">
+                    <input type="text" placeholder=" &nbsp;Search..." name="search" style="font-style:italic">
+
+                    <a onclick="window.location.reload();">
+            &nbsp;
+          <div type="submit" id="menu-btn" class="fas fa-search" style="scale:1.2"></div>
+          
+        </a>
+                </div>
+
+            </form>
+        </div>
+        <nav class="navbar" id="home">
+            <a onClick="window.location.reload(); " href="#slide">Home</a>
+            <a href="#footer">Schemes</a>
+
+
+            <a href="#user_login">User_login</a>
+
+            <a href="#footer">About</a>
+        </nav>
+    </header>
+
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container" id="slide">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <a href="https://pmkisan.gov.in/">
+                <img src="img1.jpg" style="width:100%">
+            </a>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <a href="https://agricoop.nic.in/en">
+                <img src="img2.jpg" style="width:100%">
+            </a>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <a href="mKisan:A Portal of Government of India for Farmer Centric Mobile Based Services
+        https://mkisan.gov.in/">
+                <img src="img3.jpg" style="width:100%">
+            </a>
+            x </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="img699.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="img7799.jpg" style="width:100%">
+
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center" class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <center>
+        <h1 style="font-size: 35px;" id="govt_schemes"><br><br>MY कृषिAADHAR</h1>
+    </center>
+
+    <div class="tiles" id="#ufarmid">
+        <div class="content">
+            <br>
+            <a href="#footer" class="btn">
+                <h3 class="t_txxt">UFID ~</h3>
+                <p class="t_text"><br>Unique Farmer ID: <br>- Farme's own adhaar <br>- Get your new unique farmer &nbsp;&nbsp;&nbsp;ID now.</p>
+            </a>
+            <a href="#footer" class="btn">
+                <h3 class="t_txxt">UPDATE UFID ~</h3>
+                <p class="t_text"> <br> - Click here to update your &nbsp;&nbsp;&nbsp;UFID </p>
+            </a>
+            <a href="#footer" class="btn">
+                <h3 class="t_txxt">UFID services ~</h3>
+                <p class="t_text"> <br>Our services:<br>- Selling crops<br>- Buying manure, seeds, &nbsp;&nbsp;&nbsp;pesticides, etc.<br>- Download 7/12 extract easily</p>
+            </a>
+            <a href="#footer" class="btn">
+                <h3 class="t_txxt">FAQ'S ~</h3>
+                <p class="t_text"> <br> - Click here to access &nbsp;&nbsp;&nbsp;frequently asked questions &nbsp;&nbsp;&nbsp;page </p>
+            </a>
+        </div>
+    </div>
+
+    <section class="footer" id="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#slide"> <i class="fas fa-chevron-right"></i> home </a>
+                <a href="#ufarmid"> <i class="fas fa-chevron-right"></i> about ufid</a>
+                <a href="#govt_schemes"> <i class="fas fa-chevron-right"></i> schemes </a>
+                <a href="userlogin.html"> <i class="fas fa-chevron-right"></i> user login</a>
+                <a href="adminH.html"> <i class="fas fa-chevron-right"></i> admin login</a>
+
+
+                <a href="#about"> <i class="fas fa-chevron-right"></i> about </a>
+
+            </div>
+
+            <div class="box">
+                <h3>govt schemes</h3>
+                <a href=#footer> <i class="fas fa-chevron-right"></i> AGMARKNET </a>
+                <a href=#footer> <i class="fas fa-chevron-right"></i> mKisan</a>
+
+                <a href=#footer> <i class="fas fa-chevron-right"></i> Jaivik kheti </a>
+                <a href=#footer> <i class="fas fa-chevron-right"></i> ATMA </a>
+            </div>
+
+            <div class="box">
+                <h3>contact govt</h3>
+                <a href=#footer> <i class="fas fa-envelope"></i> &nbsp;farmer.gov@gmail.com </a>
+                <a href=#footer> <i class="fas fa-phone-alt"></i> &nbsp;1800 1036 110</a>
+                <a href=#footer> <i class="fas fa-phone-alt"></i> &nbsp;079-23250802</a>
+
+                <a href=#footer> <i class="fas fa-map-marker-alt"></i> Amreli, Gujarat, india</a>
+            </div>
+
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href=#footer> <i class="fab fa-facebook-f"></i> Facebook </a>
+                <a href="https://twitter.com/agrigoi"> <i class="fab fa-twitter"></i> Twitter </a>
+                <a href="https://www.instagram.com/agrigoi/?hl=en"> <i class="fab fa-instagram"></i> Instagram </a>
+                <a href=""> <i class="fab fa-linkedin"></i> Linkedin </a>
+
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span>Akatsuki</span> | all rights reserved </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="adminH.css">
+
+
+</head>
+<body>
+
+    <h1><b><center><font size="30">ADMIN LOGIN</font></center></b></h1>
+
+
+
+    <form action="authentication.php" method="post">
+        <div class="container">
+          <label for="uname"><b><font size="5">ADMIN'S ID</font></b></label>
+          <input type="text" placeholder="Enter Username" name="a_email" required>
+      
+          <label for="psw"><b><font size="5">PASSWORD</font></b></label>
+          <input type="text" placeholder="password" name="pass" required>
+              
+          <button type="submit" class="login_btn"><font size="5"  action="authentication.php">Login</font></button><br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"><font size="3"> Remember me</font>
+          </label>
+        </div>
+        <button type="button" class="cancelbtn">Cancel</button>
+        <font size="3"><span class="psw">Forgot<a href="#">password?</a></span></font>
+        </div>
+    </form>
+    
+</body>   
+</html>

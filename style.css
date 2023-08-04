@@ -1,0 +1,19 @@
+body {
+    margin: 1.5em;
+    font-family: "League Spartan", sans-serif;
+    
+    background-size: cover;
+    background-position-x: 0%;
+    background-position-y: 10%;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+  }
+
+.header img {
+    scale: 0.2;
+    width: 0.002%;
+    height: 0-0.2em;
+  margin-top: 2.3em;
+  margin-bottom: -0.2em;
+  top: 0em;
+  }
